@@ -68,27 +68,6 @@ ISCC-RIS
 
 ---
 
-## 📈 System Model Overview
-
-The proposed system consists of:
-
-1. **BS** with M antennas serving K single-antenna users
-2. **RIS** with N elements near users to enhance communication
-3. **Sensing**: BS detects T targets with fixed LoS connections
-4. **FL**: Users perform local computation and send updates to BS
-5. **User Selection**: Based on local computing time criterion
-
-### Optimization Variables
-
-- Beamforming matrix W ∈ ℂ^(M×(K+M))
-- RIS phase shifts Ψ = diag(ψ)
-- Local computing frequency f_k
-- Bandwidth allocation b_k
-- User selection α_k
-- Beampattern scaling factor γ
-
----
-
 ## 🤝 Contact
 
 - Pouya Hosseini: hosseini.pouya7279@gmail.com
