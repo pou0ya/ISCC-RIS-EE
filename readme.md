@@ -19,26 +19,6 @@ To maximize the energy efficiency (EE), we leverage a nonlinear optimization pro
 
 ---
 
-## 📝 Citation
-
-If you use this code for research that results in publications, please cite our original article:
-
-```bibtex
-@article{kesargheh2025integrated,
-  title={Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning},
-  author={Kesargheh, Mohammad Mansour and Hosseini, Pouya and Nouri, Nima and Zahedi, Abdulhamid and Abouei, Jamshid and Mohammadi, Arash},
-  journal={IEEE Transactions on Vehicular Technology},
-  volume={75},
-  number={3},
-  pages={4336--4351},
-  month={Mar.},
-  year={2026},
-  publisher={IEEE}
-}
-```
-
----
-
 ## 🔧 Requirements
 
 - **MATLAB** (R2020a or later recommended)
@@ -64,6 +44,26 @@ Simply execute the main script in MATLAB:
 
 ```matlab
 ISCC-RIS
+```
+
+---
+
+## 📝 Citation
+
+If you use this code for research that results in publications, please cite our original article:
+
+```bibtex
+@article{kesargheh2025integrated,
+  title={Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning},
+  author={Kesargheh, Mohammad Mansour and Hosseini, Pouya and Nouri, Nima and Zahedi, Abdulhamid and Abouei, Jamshid and Mohammadi, Arash},
+  journal={IEEE Transactions on Vehicular Technology},
+  volume={75},
+  number={3},
+  pages={4336--4351},
+  month={Mar.},
+  year={2026},
+  publisher={IEEE}
+}
 ```
 
 ---
