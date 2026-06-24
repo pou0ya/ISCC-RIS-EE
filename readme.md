@@ -1,6 +1,6 @@
-# ISCC-RIS: Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning
+# Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning
 
-Simulation code for the paper: **"Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning"**, which has been submitted to IEEE Transactions on Vehicular Technology.
+Simulation code for the paper: **"Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning"**, which has been published in IEEE Transactions on Vehicular Technology.
 
 ---
 
@@ -28,8 +28,12 @@ If you use this code for research that results in publications, please cite our 
   title={Integrated Sensing, Communication, and Computing for Energy Efficient RIS-aided Wireless Federated Learning},
   author={Kesargheh, Mohammad Mansour and Hosseini, Pouya and Nouri, Nima and Zahedi, Abdulhamid and Abouei, Jamshid and Mohammadi, Arash},
   journal={IEEE Transactions on Vehicular Technology},
-  year={2025},
-  note={Submitted}
+  volume={75},
+  number={3},
+  pages={4336--4351},
+  month={Mar.},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
