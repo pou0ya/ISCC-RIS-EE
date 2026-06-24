@@ -35,14 +35,6 @@ If you use this code for research that results in publications, please cite our 
 
 ---
 
-### File Description
-
-| File | Description |
-|------|-------------|
-| `ISCC-RIS.m` | Main MATLAB script containing the complete simulation framework, including channel generation, SLP optimization algorithm, helper functions, and result visualization |
-
----
-
 ## 🔧 Requirements
 
 - **MATLAB** (R2020a or later recommended)
@@ -68,79 +60,6 @@ Simply execute the main script in MATLAB:
 
 ```matlab
 ISCC-RIS
-```
-
-### 3. Simulation Modes
-
-The script supports two simulation modes controlled by the `run_monte_carlo` variable:
-
-| Mode | Setting | Description |
-|------|---------|-------------|
-| **Convergence** | `run_monte_carlo = false` | Single run showing EE convergence over SLP iterations |
-| **Monte Carlo** | `run_monte_carlo = true` | Multiple runs (default: 50) for statistical analysis |
-
-### 4. Key Parameters
-
-Adjustable system parameters in the main script:
-
-```matlab
-M = 16;                    % Number of BS antennas
-N = 40;                    % Number of RIS elements
-K = 4;                     % Number of users
-T = 3;                     % Number of sensing targets
-B = 20e6;                  % Bandwidth (Hz)
-P_max = 10^(40/10)/1000;   % Max transmit power (W)
-sigma2 = 10^(-80/10)/1000; % Noise power (W)
-```
-
----
-
-## 📊 Output
-
-### Single Run Mode (`run_monte_carlo = false`)
-
-- **Figure 1**: Energy Efficiency convergence plot vs. SLP iterations
-- **Console Output**: Iteration details including step norm, rho, Delta, EE, and constraint violations
-- **Final Metrics**: Average EE, Rate, and Power consumption
-
-### Monte Carlo Mode (`run_monte_carlo = true`)
-
-- **Figure 1**: Boxplot showing EE distribution across all runs
-- **Console Output**: Results for each iteration and final averages
-
-### Constraint Check
-
-The script automatically checks all constraints (C1-C9) against the original problem formulation and reports whether each is satisfied or violated.
-
----
-
-## 🔍 Code Features
-
-### Main Functions
-
-| Function | Description |
-|----------|-------------|
-| `unpack_variables()` | Converts optimization vector back to matrix/vector variables |
-| `compute_ideal_beampattern()` | Constructs ideal radiation pattern for target directions |
-| `steering_vector()` | Creates steering vector for given angle |
-| `compute_SINR_and_grads()` | Calculates SINR and gradients w.r.t. W and phi |
-| `build_linearized_objective_gradient()` | Constructs gradient of linearized objective |
-| `build_linearized_constraints()` | Linearizes constraints using first-order Taylor expansion |
-| `compute_beampattern_error_and_grads()` | Computes beampattern MSE and gradients |
-| `calculate_merit_function()` | Evaluates merit function with penalty |
-| `check_final_constraints()` | Verifies all constraints on final solution |
-
-### SLP Algorithm Parameters
-
-```matlab
-rho_bad = 0.25;      % Lower threshold for reduction ratio
-rho_good = 0.75;     % Upper threshold for reduction ratio
-zeta = 2;            % Trust region update factor
-kappa = 2;           % Penalty factor increase factor
-Delta_k = 0.1;       % Initial trust region radius
-lambda_p = 1e5;      % Penalty for binary alpha variables
-lambda_k = 1e10;     % Initial penalty factor
-epsilon1 = 1e-4;     % Stopping tolerance
 ```
 
 ---
