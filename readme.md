@@ -35,14 +35,6 @@ If you use this code for research that results in publications, please cite our 
 
 ---
 
-## 📁 Code Structure
-
-```
-ISCC-RIS/
-├── ISCC-RIS.m          # Main simulation script
-└── README.md           # This file
-```
-
 ### File Description
 
 | File | Description |
@@ -174,36 +166,8 @@ The proposed system consists of:
 
 ---
 
-## ⚠️ Notes
-
-1. **Channel Estimation**: The code includes both perfect and imperfect CSI cases with parameter α ∈ [0,1]
-2. **Path Loss**: Rician fading model with specified path loss exponents and Rician factors
-3. **Sensing**: Beampattern similarity metric with MSE constraint ε
-4. **NOMA Support**: Code is structured for FDMA; NOMA extension is described in the paper
-
----
-
 ## 🤝 Contact
 
-**Corresponding Authors:**
-- Jamshid Abouei: abouei@yazd.ac.ir
-- Arash Mohammadi: arash.mohammadi@concordia.ca
-
-**First Author:**
-- Mohammad Mansour Kesargheh: mohammadmansourkesargheh@gmail.com
-
----
-
-## 📚 Related References
-
-1. A. Adhikary, A. Deb Raha, Y. Qiao, W. Saad, Z. Han, and C. Seon Hong, "Holographic MIMO with integrated sensing and communication for energy-efficient cell-free 6G networks," *IEEE Internet of Things J.*, vol. 11, no. 19, pp. 30617-30635, Oct. 2024.
-2. M. Rihan, A. Zappone, S. Buzzi, D. Wubben, and A. Dekorsy, "Energy efficiency maximization for active RIS-aided integrated sensing and communication," *J. Wireless Comm. Network*, vol. 2024, no. 20, pp. 1-22, Apr. 2024.
-3. J. Nocedal and S. J. Wright, *Numerical Optimization*. Springer, Jul. 2006.
-
----
-
-## 📜 License
-
-This code is provided for academic and research purposes. Please cite the original paper if you use this code in your work.
+- Pouya Hosseini: hosseini.pouya7279@gmail.com
 
 ---
